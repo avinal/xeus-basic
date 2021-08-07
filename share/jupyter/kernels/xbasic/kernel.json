@@ -1,0 +1,9 @@
+{
+    "display_name": "xbasic",
+    "argv": [
+        "/home/avinal/miniconda3/envs/vkurlnel/bin/xbasic",
+        "-f",
+        "{connection_file}"
+    ],
+    "language": "basic"
+}

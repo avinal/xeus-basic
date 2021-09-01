@@ -1,0 +1,26 @@
+name: Improve
+description: This is an issue template.
+labels:
+  - content
+body:
+  - type: markdown
+    attributes:
+      value: |
+        *This is an issue template*
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: Please check
+      options:
+        - label: I have done all required
+          required: true
+
+  - type: textarea
+    attributes:
+      label: What is the problem?
+      description: Include links to articles where you're seeing a problem, screenshots, what browser you're using, etc.
+    validations:
+      required: true
+      

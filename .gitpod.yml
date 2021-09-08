@@ -7,4 +7,6 @@ ports:
 workspaceLocation: xbasic
 checkoutLocation:  xbasic
 tasks:
-  - init: conda activate base
+  - init: |
+      export PATH="/home/gitpod/miniconda3/bin/:$PATH"
+      conda activate base

@@ -1,0 +1,9 @@
+mkdir build
+
+cd build
+
+echo $CONDA_PREFIX
+
+cmake -D CMAKE_INSTALL_PREFIX=$CONDA_PREFIX ..
+
+make install

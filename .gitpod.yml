@@ -6,4 +6,5 @@ ports:
     onOpen: open-browser
 tasks:
   - command: conda activate base
-  - command: echo -e "\nalias jupyternb=\"jupyter notebook --NotebookApp.allow_origin=\'$(gp url 8888)\' --NotebookApp.token='' --NotebookApp.password=''\" >> ~/.bashrc
+  - command: echo -e "\nalias jupyternb=\"jupyter notebook --NotebookApp.allow_origin=\'$(gp url 8888)\' --NotebookApp.token='' --NotebookApp.password=''\"" >> ~/.bashrc
+  - command: source ~/.bashrc

@@ -1,0 +1,12 @@
+name: xeus-basic
+channels:
+  - conda-forge
+dependencies:
+  # Build dependencies
+  - cmake
+  # Host dependencies
+  - xeus
+  - nlohmann_json
+  - cppzmq
+  - xtl
+

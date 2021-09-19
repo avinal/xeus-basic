@@ -1,12 +1,9 @@
 image:
-  file: Dockerfile
+  file: .gitpod.dockerfile
 ports:
   - port: 8888
     visibility: public
-    onOpen: notify
-workspaceLocation: xbasic
-checkoutLocation:  xbasic
+    onOpen: open-browser
 tasks:
-  - init: |
-      export PATH="/home/gitpod/miniconda3/bin/:$PATH"
-      conda activate base
+  - command: conda activate base
+  - command: echo -e "\nalias jupyternb=\"jupyter notebook --NotebookApp.allow_origin=\'$(gp url 8888)\' --NotebookApp.token='' --NotebookApp.password=''\" >> ~/.bashrc

@@ -1,3 +1,11 @@
+/**
+ * SPDX-License-Identifier: Apache-2.0
+ * SPDX-FileCopyrightText: 2021 Sarita Singh <saritasingh.0425@gmail.com>
+ * SPDX-FileCopyrightText: 2021 Avinal Kumar <avinal.xlvii@gmail.com>
+ *
+ * @file	xbasic_interpreter.cpp
+ * @brief	Jupyter Kernel Interpreter Implementation
+ */
 
 #include "xbasic/xbasic_interpreter.hpp"
 

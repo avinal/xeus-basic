@@ -1,3 +1,9 @@
+#[=============================================================================[
+# SPDX-License-Identifier: Apache-2.0
+# SPDX-FileCopyrightText: 2021 Sarita Singh <saritasingh.0425@gmail.com>
+# SPDX-FileCopyrightText: 2021 Avinal Kumar <avinal.xlvii@gmail.com>
+#]=============================================================================]
+
 cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
 
 # ---- Project ----

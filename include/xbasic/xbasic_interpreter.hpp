@@ -1,10 +1,11 @@
 #ifndef XBASIC_INTERPRETER_HPP_
 #define XBASIC_INTERPRETER_HPP_
 
+#include <iostream>
+
 #include "basic/basic.hpp"
 #include "nlohmann/json.hpp"
 #include "xeus/xinterpreter.hpp"
-
 
 using xeus::xinterpreter;
 namespace nl = nlohmann;
@@ -13,7 +14,8 @@ namespace xbasic {
 
   class xbasic_interpreter : public xinterpreter {
   private:
-    basic code_runner;
+    basic* code_runner = nullptr;
+
   public:
     xbasic_interpreter() = default;
 

@@ -11,8 +11,8 @@ add_library(basic "")
 target_sources(basic PRIVATE ${BASIC_SRC})
 target_include_directories(basic PRIVATE include/basic)
 
-add_executable(basic_exec main.cc)
-target_include_directories(basic_exec PRIVATE include/basic)
-target_link_libraries(basic_exec PRIVATE basic)
+# add_executable(basic_exec main.cc)
+# target_include_directories(basic_exec PRIVATE include/basic)
+# target_link_libraries(basic_exec PRIVATE basic)
 
 

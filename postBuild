@@ -1,9 +1,13 @@
-mkdir build
+#! /bin/sh
 
-cd build
+# SPDX-License-Identifier: Apache-2.0
+# SPDX-FileCopyrightText: 2021 Avinal Kumar <avinal.xlvii@gmail.com>
 
-echo $CONDA_PREFIX
+# Create a directory for build
+mkdir build && cd build || exit
 
-cmake -D CMAKE_INSTALL_PREFIX=$CONDA_PREFIX ..
+# Configure CMake
+cmake -D CMAKE_INSTALL_PREFIX="/srv/conda/envs/notebook" ..
 
+# Install the Kernel
 make install
